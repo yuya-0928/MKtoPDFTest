@@ -21,6 +21,8 @@ jobs:
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: TestPdf.md
+          output_dir: pdfs
+          build_html: false
 
       - name: Push PDFs
         run: |
