@@ -17,6 +17,9 @@ jobs:
         with:
           token: ${{secrets.PERSONAL_ACCESS_TOKEN}}
 
+      - name: Remove old PDFs
+        run: rm -rf pdfs
+
       - name: Convert to PDF
         uses: baileyjm02/markdown-to-pdf@v1
         with:
